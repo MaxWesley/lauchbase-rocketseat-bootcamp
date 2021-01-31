@@ -40,36 +40,36 @@
         <section>
             <h1>Favoritos</h1>
             <div class="container-favoritos">
-                <div class="card">
+                <div class="card" onclick="Modal.handleOpenClose()" data-url="mapas-com-react-usando-leaflet/">
                     <span class="cape"></span>
                     <div class="content">
                         <h3>Mapas com React usando Leaflet</h3>
                         <p class="infos">
                             <small>por</small>
                             <strong class="author">Thiago Marinho</strong>,
-                            <small class="tempo-leitura">10 minutos de leitura</small>
+                            <small class="tempo-leitura">11 minutos de leitura</small>
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="Modal.handleOpenClose()" data-url="como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal/">
                     <span class="cape"></span>
                     <div class="content">
                         <h3>Como renomear vários arquivos de uma vez usando o terminal</h3>
                         <p class="infos">
                             <small>por</small>
                             <strong class="author">Thiago Marinho</strong>,
-                            <small class="tempo-leitura">10 minutos de leitura</small>
+                            <small class="tempo-leitura">2 minutos de leitura</small>
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="Modal.handleOpenClose()" data-url="nextjs-novidades-na-versao-10-e-atualizacao-do-blog-para-melhorar-a-performance/">
                     <span class="cape"></span>
                     <div class="content">
                         <h3>Next.JS - Novidades na versão 10 e atualização do blog para melhorar a performance</h3>
                         <p class="infos">
                             <small>por</small>
                             <strong class="author">Thiago Marinho</strong>,
-                            <small class="tempo-leitura">10 minutos de leitura</small>
+                            <small class="tempo-leitura">4 min de leitura</small>
                         </p>
                     </div>
                 </div>
@@ -92,6 +92,23 @@
             </li>
         </ul>
     </footer>
+
+
+    <div class="modal">
+        <div class="content">
+            <iframe src="https://blog.rocketseat.com.br"></iframe>
+            <div class="footer">
+                <button id="close-button" onclick="Modal.handleOpenClose()">
+                    <img src="../assets/icon-close.svg" />
+                </button>
+                <button id="maximize-button" onclick="Modal.handleMaximize()">
+                    <img src="../assets/icon-maximize.svg" />
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts.js"></script>
 </body>
 
 </html>
