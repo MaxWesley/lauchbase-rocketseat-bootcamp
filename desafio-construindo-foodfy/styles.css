@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+    position: relative;
+}
+
+body .wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+body .wrapper header{
+    padding-top: 36px;
+    padding-bottom: 30px;
+
+    display: flex;
+}
+
+body .wrapper header img {
+    margin-right: 122.4px;
+}
+
+body .wrapper header ul {
+    list-style: none;
+    display: flex;
+}
+
+body .wrapper header ul a {
+    text-decoration: none;
+    outline: none;
+    font-size: 16px;
+    color: #111;
+}
+
+body .wrapper header ul a.active {
+    font-weight: bold;
+}
+
+body .wrapper header ul a:first-of-type {
+    margin-right: 30px;
+}
+
+body .wrapper main #home-cape{
+    width: 100%;
+    height: 366px;
+
+    background-color: #FBDFDB;
+    border-radius: 30px;
+
+    display: flex;
+
+    position: relative;
+
+    margin-bottom: 50px;
+}
+
+body .wrapper main #home-cape div{
+    padding-left: 60px;
+    padding-top: 117px;
+    padding-bottom: 117px;
+}
+
+body .wrapper main #home-cape div h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: #111111;
+}
+
+body .wrapper main #home-cape div p{
+    width: 316px;
+
+    color: #000;
+    opacity: 0.7;
+    
+    font-size: 18px;
+    line-height: 28px;
+    
+    margin-top: 10px;
+}
+
+body .wrapper main #home-cape img {
+    height: 300px;
+    width: 216px;
+
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+body .wrapper main #mais-acessadas{}
+
+body .wrapper main #mais-acessadas h1{
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+body .wrapper main .container-receitas{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
+}
+
+body .wrapper main .container-receitas .receita {
+    cursor: pointer;
+}
+
+body .wrapper main .container-receitas .receita img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+body .wrapper main .container-receitas .receita h4{
+    font-size: 18px;
+    color: #111111;
+}
+
+body .wrapper main .container-receitas .receita p{
+    font-size: 14px;
+}
+body .wrapper main .container-receitas .receita small{
+    color: #777777;
+}
+
+body footer{
+    width: 100%;
+
+    margin-top: 50px;
+
+    background: #EEEEEE;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 62px;
+}
+
+body footer p {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+/* Page - SOBRE */
+
+main.sobre section h1{
+    margin-bottom: 20px;
+}
+
+main.sobre section p{
+    margin-bottom: 30px;
+}
+
+main.sobre section p:last-of-type {
+    margin-bottom: 55px;
+}
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+
+    transition: opacity 0.2s easy-in-out;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 30px;
+    
+    text-align: center;
+}
+
+.modal img {
+    width: 600px;
+    height: 200px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+.modal h2 {
+    font-size: 22px;
+    color: #111;
+}
+
+.modal p {
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
+
+    margin-top: 5px;
+}
+
+.modal button {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #999999;
+
+    margin-top: 60px;
+
+    cursor: pointer;
+}

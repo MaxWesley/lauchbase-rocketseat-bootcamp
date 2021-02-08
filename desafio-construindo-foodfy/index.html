@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodfy</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="./assets/logo.png" alt="Logo de Foodfy">
+            <ul>
+                <a href="./sobre">
+                    <li>Sobre</li>
+                </a>
+                <a href="./receitas">
+                    <li>Receitas</li>
+                </a>
+            </ul>
+        </header>
+        <main>
+            <section id="home-cape">
+                <div>
+                    <h1>As melhores receitas</h1>
+                    <p>Aprenda a construir os melhores pratos com receitas criadas por profisssionais do mundo inteiro.
+                    </p>
+                </div>
+                <img src="./assets/chef.png" alt="Imagem Chefe de cozinha ilustrado">
+            </section>
+            <section id="mais-acessadas">
+                <h1>Mais acessadas</h1>
+                <div class="container-receitas">
+
+                    <div class="receita" onclick="Modal.handleModal(this)">
+                        <img src="./assets/burger.png" alt="Imagem de receita">
+                        <h4>Triplo Burguer Bacon</h4>
+                        <p>
+                            <small>por Jorge Relato</small>
+                        </p>
+                    </div>
+                    <div class="receita" onclick="Modal.handleModal(this)">
+                        <img src="./assets/pizza.png" alt="Imagem de receita">
+                        <h4>Pizza 4 estações</h4>
+                        <p>
+                            <small>por Jorge Relato</small>
+                        </p>
+                    </div>
+                    <div class="receita" onclick="Modal.handleModal(this)">
+                        <img src="./assets/espaguete.png" alt="Imagem de receita">
+                        <h4>Espaguete ao alho</h4>
+                        <p>
+                            <small>por Jorge Relato</small>
+                        </p>
+                    </div>
+                    <div class="receita" onclick="Modal.handleModal(this)">
+                        <img src="./assets/lasanha.png" alt="Imagem de receita">
+                        <h4>Lasanha mac n' cheese</h4>
+                        <p>
+                            <small>por Jorge Relato</small>
+                        </p>
+                    </div>
+                    <div class="receita" onclick="Modal.handleModal(this)">
+                        <img src="./assets/doce.png" alt="Imagem de receita">
+                        <h4>Docinhos pão-do-céu</h4>
+                        <p>
+                            <small>por Jorge Relato</small>
+                        </p>
+                    </div>
+                    <div class="receita" onclick="Modal.handleModal(this)">
+                        <img src="./assets/asinhas.png" alt="Imagem de receita">
+                        <h4>Asinhas de frango ao barbecue</h4>
+                        <p>
+                            <small>por Max Wesley</small>
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Todos direitos reservados, receitas Foodfy.</p>
+    </footer>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <img src="./assets/burger.png" alt="Imagem de receita">
+            <h2>Triplo bacon burger</h2>
+            <p><small>por Vania Steroski</small></p>
+
+            <button onclick="Modal.handleModal()">Fechar modal</button>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
