@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% block head %}
+    <title>Max Wesley</title>
+    {% endblock %}
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/">Sobre</a>
+            <a href="./portfolio">Aulas</a>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

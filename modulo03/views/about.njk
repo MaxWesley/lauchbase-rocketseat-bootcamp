@@ -1,0 +1,28 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>Sobre - Max Wesley</title>
+{% endblock %}
+{% block content %}
+<main>
+    <section class="profile">
+        <img src="{{about.avatar_url}}" alt="Foto de perfil de Max Wesley" />
+        <h2>{{about.name}}}</h2>
+        <p>{{about.role}}</p>
+    </section>
+    <section class="description">
+        <p>{{about.description}}
+            <!-- Apaixonado
+                por desenvolvimento e tecnologia, com ênfase em Web/Mobile, utilizando JavaScript e seu universo de ferramentas
+                como ReactJS, NodeJS e ReactNative. Faço uns joguinhos por diversão. -->
+        </p>
+    </section>
+    <section class="links">
+        <nav>
+            {% for link in about.links%}
+            <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+            {% endfor %}
+        </nav>
+    </section>
+</main>
+{% endblock %}

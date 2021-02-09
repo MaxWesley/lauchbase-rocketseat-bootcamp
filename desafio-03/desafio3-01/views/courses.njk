@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Sobre</title>
+{% endblock %}
+
+{% block content %}
+<main class="wrapper">
+        <h1>Conteúdos</h1>
+        <section>
+            <h1>Favoritos</h1>
+            <div class="container-favoritos">
+                {% for course in courses %}
+                <div class="card" onclick="Modal.handleOpenClose()" data-url="{{course.id}}">
+                    <span class="cape"></span>
+                    <div class="content">
+                        <h3>{{course.title}}</h3>
+                        <p class="infos">
+                            <small>por</small>
+                            <strong class="author">{{course.author}}</strong>,
+                            <small class="tempo-leitura">{{course.duration}}</small>
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+{% endblock %}
